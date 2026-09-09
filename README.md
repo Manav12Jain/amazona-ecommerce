@@ -1,218 +1,208 @@
-# \# 🛒 Amazona E-Commerce
+# 🛒 Amazona E-Commerce
+
+A full-stack e-commerce web application inspired by Amazon, built with
+the MERN stack.
+
+The application provides a complete online shopping experience with user
+authentication, product browsing, search, shopping cart, checkout, order
+management, and separate admin and seller functionality.
+
+## ✨ Features
+
+### 👤 User
+
+-   User registration and login
+-   User profile management
+-   Browse and search products
+-   Product categories
+-   Product ratings and reviews
+-   Shopping cart
+-   Shipping address management
+-   Checkout and payment method selection
+-   Order placement, history, and details
+
+### 🧑‍💼 Admin
+
+-   Admin dashboard
+-   Manage users
+-   Manage products
+-   Add and edit products
+-   Manage orders
+-   View order details
+
+### 🏪 Seller
+
+-   Seller dashboard
+-   Manage seller products
+-   Manage seller orders
+
+### 💬 Other Features
+
+-   Customer support / chat
+-   Map functionality
+-   Protected routes
+-   Role-based access control
+-   Image upload functionality
+-   Responsive user interface
+
+## 🛠️ Tech Stack
 
-# 
+### Frontend
+
+-   React.js
+-   Redux
+-   React Router
+-   JavaScript
+-   CSS
+-   Axios
+
+### Backend
+
+-   Node.js
+-   Express.js
+-   MongoDB
+-   Mongoose
+
+### Development
+
+-   Git
+-   GitHub
+-   npm
+-   ESLint
+
+## 📁 Project Structure
+
+``` text
+amazona-ecommerce/
+├── backend/
+│   ├── models/
+│   ├── routers/
+│   ├── data.js
+│   ├── server.js
+│   └── utils.js
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── actions/
+│       ├── components/
+│       ├── constants/
+│       ├── reducers/
+│       └── screens/
+├── template/
+├── uploads/
+├── .gitignore
+├── .eslintrc.js
+├── package.json
+├── Procfile
+└── README.md
+```
 
-# A full-stack e-commerce web application inspired by Amazon, built with the MERN stack.
+## 🚀 Getting Started
 
-# 
+### Prerequisites
 
-# The project provides a complete shopping experience with product browsing, search, cart management, user authentication, checkout, order management, and administrative features.
+-   Node.js
+-   npm
+-   MongoDB
+-   Git
 
-# 
+### 1. Clone the repository
 
-# \## 🚀 Features
+``` bash
+git clone https://github.com/Manav12Jain/amazona-ecommerce.git
+cd amazona-ecommerce
+```
 
-# 
+### 2. Install dependencies
 
-# \### 👤 User Features
+``` bash
+npm install
+cd frontend
+npm install
+```
 
-# \- User registration and login
+### 3. Configure environment variables
 
-# \- User profile management
+Create a `.env` file in the project root:
 
-# \- Product browsing
+``` env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
-# \- Product search
+### 4. Run the application
 
-# \- Product ratings and reviews
+From the project root:
 
-# \- Shopping cart
+``` bash
+npm start
+```
 
-# \- Shipping address management
+Then, from the `frontend` directory:
 
-# \- Multiple payment method selection
+``` bash
+npm start
+```
 
-# \- Order placement
+## 📌 Main Application Areas
 
-# \- Order history
+  Area       Description
+  ---------- ------------------------------------
+  Home       Browse available products
+  Product    View product details and ratings
+  Search     Search and filter products
+  Cart       Manage items before checkout
+  Checkout   Complete the purchase process
+  Orders     View order history and details
+  Profile    Manage user information
+  Admin      Manage users, products, and orders
+  Seller     Manage seller products and orders
+  Support    Customer support functionality
 
-# \- Order details
+## 🔐 Authentication & Authorization
 
-# 
+The application includes authentication and role-based authorization.
 
-# \### 🛍️ E-Commerce Features
+Available roles: - User - Seller - Admin
 
-# \- Product listing
+Protected routes prevent unauthorized users from accessing restricted
+pages.
 
-# \- Product details
+## 📦 Backend
 
-# \- Product search
+The backend is built with Node.js and Express.js and provides APIs for
+users, products, orders, authentication, and image uploads.
 
-# \- Product categories
+MongoDB is used for data storage, with Mongoose for database modeling.
 
-# \- Product ratings
+## 🎨 Frontend
 
-# \- Shopping cart
+The frontend is built with React.js and Redux.
 
-# \- Checkout process
+The application is organized into actions, components, constants,
+reducers, and screens.
 
-# \- Order management
+## 📷 Screenshots
 
-# 
+Add screenshots of the application here to showcase the user interface.
 
-# \### 👨‍💼 Admin Features
+## 🔮 Future Improvements
 
-# \- Admin dashboard
+-   Online payment gateway integration
+-   Product wishlist
+-   Advanced product filtering
+-   Improved search
+-   Email notifications
+-   Product reviews with images
+-   Seller analytics
+-   Production deployment
 
-# \- Manage users
+## 👨‍💻 Author
 
-# \- Manage products
+**Manav Jain**
 
-# \- Edit products
+GitHub: [Manav12Jain](https://github.com/Manav12Jain)
 
-# \- Manage orders
+## 📄 License
 
-# \- View order information
-
-# 
-
-# \### 🏪 Seller Features
-
-# \- Seller dashboard
-
-# \- Seller product management
-
-# \- Seller order management
-
-# 
-
-# \### 💬 Additional Features
-
-# \- Support / chat functionality
-
-# \- Map screen
-
-# \- Protected routes
-
-# \- Role-based access
-
-# \- Image upload functionality
-
-# 
-
-# \---
-
-# 
-
-# \## 🛠️ Tech Stack
-
-# 
-
-# \### Frontend
-
-# \- React.js
-
-# \- Redux
-
-# \- React Router
-
-# \- JavaScript
-
-# \- CSS
-
-# \- Axios
-
-# 
-
-# \### Backend
-
-# \- Node.js
-
-# \- Express.js
-
-# \- MongoDB
-
-# \- Mongoose
-
-# 
-
-# \### Development Tools
-
-# \- Git
-
-# \- GitHub
-
-# \- npm
-
-# \- ESLint
-
-# 
-
-# \---
-
-# 
-
-# \## 📁 Project Structure
-
-# 
-
-# ```text
-
-# amazona-ecommerce/
-
-# │
-
-# ├── backend/
-
-# │   ├── models/
-
-# │   ├── routers/
-
-# │   ├── data.js
-
-# │   ├── server.js
-
-# │   └── utils.js
-
-# │
-
-# ├── frontend/
-
-# │   ├── public/
-
-# │   └── src/
-
-# │       ├── actions/
-
-# │       ├── components/
-
-# │       ├── constants/
-
-# │       ├── reducers/
-
-# │       ├── screens/
-
-# │       ├── App.js
-
-# │       ├── index.js
-
-# │       └── store.js
-
-# │
-
-# ├── template/
-
-# │
-
-# ├── uploads/
-
-# │
-
-# ├── package.json
-
-# ├── Procfile
-
-# ├── .gitignore
-
-# └── README.md
-
+This project is available for educational and development purposes.
