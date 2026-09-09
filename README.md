@@ -182,10 +182,6 @@ The frontend is built with React.js and Redux.
 The application is organized into actions, components, constants,
 reducers, and screens.
 
-## 📷 Screenshots
-
-Add screenshots of the application here to showcase the user interface.
-
 ## 🔮 Future Improvements
 
 -   Online payment gateway integration
